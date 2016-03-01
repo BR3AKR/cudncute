@@ -1,0 +1,18 @@
+<table style="width:100%">
+  <tr>
+    <th>Product Name</th>
+    <th>Product Description</th>
+    <th>Product Cost</th>
+  </tr>
+  {{#each model as |product|}}
+  <tr>
+    <td>{{#link-to "products.product" product.id}}{{product.name}}{{/link-to}}</td>
+    <td>{{product.description}}</td>
+    <td>{{product.cost}}</td>
+  </tr>
+  {{/each}}
+</table>
+
+<p>
+  {{outlet}}
+</p>
