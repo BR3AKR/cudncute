@@ -6,7 +6,7 @@ export default Ember.Service.extend({
 
     products.push({
       id: '1',
-      name: 'Basic Scarf',
+      name: 'Basic Scarves',
       description: 'A simple hand-crafted scarf',
       cost: 50
     });
