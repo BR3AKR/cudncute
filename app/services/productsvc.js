@@ -25,6 +25,13 @@ export default Ember.Service.extend({
       cost: 100
     });
 
+    products.push({
+      id: '3',
+      name: 'Head Dress',
+      description: 'A lovely head dress for your dressed head',
+      cost: 1000
+    });
+
     return products;
   },
   getProduct(id) {
